@@ -67,5 +67,50 @@
 
 .mobile_menu {
     font-weight: 600;
-    display: none;
+    /* display: none; */
+}
+
+@media only screen and (max-width: 992px) {
+    .logo img {
+        width: calc(100% - 70%);
+      }
+      .logo h5 {
+        font-size: 0.8rem;
+        margin-top: -15px;
+      }
+   
+    .navigation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.425);
+      z-index: 99;
+      display: none;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        line-height: 20px;
+      }
+      .menu a {
+        font-size: 0.9rem;
+      }
+      .mobile__menu {
+        display: block;
+      }
+      .cart_icon i,
+      .user i, 
+      .mobile_menu {
+        font-size: 1.rem;  
+      }
 }
