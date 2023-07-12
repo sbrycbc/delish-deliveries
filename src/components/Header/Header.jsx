@@ -3,6 +3,8 @@ import { Container, Form } from 'reactstrap';
 import logo from '../../assets/images/sbry.png';
 import { NavLink, Link } from 'react-router-dom';
 
+import '../../styles/header.css';
+
 const nav_links = [
   {
     display: 'Home',
@@ -20,7 +22,7 @@ const nav_links = [
     display: 'Contact',
     path: '/contact'
   },
-]
+];
 
 const Header = () => {
   return (
@@ -39,7 +41,10 @@ const Header = () => {
           <div className="menu d-flex align-items-center gap-5">
             {
               nav_links.map((item,index)=>(
-                <NavLink to={item.path} key={index}>{item.display}</NavLink>
+                <NavLink to={item.path} key={index} 
+                  className={navClass => navClass.isActive ? 'active_menu' : ' '}>
+                  {item.display}
+                </NavLink>
               ))
             }
           </div>
