@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import { Container, Form } from 'reactstrap';
 import logo from '../../assets/images/sbry.png';
 import { NavLink, Link } from 'react-router-dom';
@@ -25,6 +25,8 @@ const nav_links = [
 ];
 
 const Header = () => {
+  const menuRef = useRef(null);
+  const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
   return (
     <header className="header">
       <Container>
@@ -37,11 +39,11 @@ const Header = () => {
       
 {/* ==================  menu ================= */}
 
-        <div className="navigation">
+        <div className="navigation" ref={menuRef} onClick={toggleMenu}>
           <div className="menu d-flex align-items-center gap-5">
             {
               nav_links.map((item,index)=>(
-                <NavLink to={item.path} key={index} 
+                <NavLink   to={item.path} key={index} 
                   className={navClass => navClass.isActive ? 'active_menu' : ' '}>
                   {item.display}
                 </NavLink>
@@ -61,7 +63,7 @@ const Header = () => {
             <Link to='/login'><i class="ri-user-5-line"></i></Link>
           </span>
 
-          <span className="mobile_menu">
+          <span className="mobile_menu" onClick={toggleMenu}>
             <i class="ri-menu-add-fill"></i>
           </span>
          </div>
