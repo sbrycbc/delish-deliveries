@@ -73,11 +73,7 @@
     color: #777;
     line-height: 30px;
 }
-
-@media only screen and (max-width: 576px) {
-    .hero_content{
-        text-align: center;
-    }
+@media only screen and (max-width: 768px){
     .hero_content h5 {
         font-size: 1rem;   
     }
@@ -90,11 +86,24 @@
         font-size: 1.5rem;
         line-height: 40px;
     }
-    .hero_btns{
-        justify-content: center;
-    }
     .hero_btns button{
         padding: 5px 15px;
         font-size: .7rem;
+    }
+    .hero_service p {
+        font-size: .7rem !important;
+    }
+} 
+@media only screen and (max-width: 576px) {
+    .hero_content{
+        text-align: center;
+    }
+    
+    .hero_btns{
+        justify-content: center;
+    }
+   
+    .hero_service{
+        justify-content: center;
     }
 }
