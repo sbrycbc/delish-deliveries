@@ -6,6 +6,8 @@ import paprika from '../assets/images/paprika.png';
 import '../styles/hero-section.css';
 import { Link } from 'react-router-dom';
 
+import Category from '../components/Ul/category/Category.jsx';
+
 const Home = () => {
   return <Helmet title='Home'>
     <section>
@@ -38,6 +40,10 @@ const Home = () => {
         </Col>
         </Row>
       </Container>
+    </section>
+
+    <section>
+      <Category />
     </section>
 
     </Helmet>
