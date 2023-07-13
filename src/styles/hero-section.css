@@ -1,0 +1,50 @@
+.hero_content{
+  padding-top: 70px;
+}
+.hero_title {
+  font-size: 2rem;
+  line-height:55px;
+}
+.hero_title span { 
+  color: aqua;
+}
+.hero_content p {
+  font-size: 1rem;
+  line-height: 30px;
+  color: #777;
+}
+.hero_btns button{
+  border: none;
+  outline: none;
+  padding: 7px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 600;
+}
+.bestellt_btn{
+  background: aqua;
+  color: #fff; 
+
+}
+.bestellt_btn:hover{
+  background: #212245;
+}
+.all_foods_btn{
+   background: transparent;
+   border:1px solid aqua !important;
+}
+.all_foods_btn a{
+   color: aqua;
+}
+.hero_service p {
+   color: #212245;
+   font-weight: 600;
+   font-size: 0.7rem;
+}
+.versand_icon i{
+   padding: 5px;
+   background:aqua;
+   color: #fff;
+   border-radius: 50%;
+   font-weight: 50% !important;
+}
