@@ -69,3 +69,32 @@
 .testimonial-title span{
     color:aqua;
 }
+.testimonial-desc{
+    color: #777;
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+    .hero_content{
+        text-align: center;
+    }
+    .hero_content h5 {
+        font-size: 1rem;   
+    }
+    .hero_content p{
+        font-size: .8rem;
+        line-height: 25px;
+    }
+
+    .hero_title {
+        font-size: 1.5rem;
+        line-height: 40px;
+    }
+    .hero_btns{
+        justify-content: center;
+    }
+    .hero_btns button{
+        padding: 5px 15px;
+        font-size: .7rem;
+    }
+}
