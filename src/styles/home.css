@@ -1,0 +1,39 @@
+.feature_subtitle{
+    color: aqua;
+}
+.feature_title span{
+    color: aqua;
+}
+.feature_text{
+    color: #777;
+}
+.feature_item p {
+    color: #777;
+}
+
+.food_category {
+    background:aqua;
+    text-align:center;
+    margin-top:30px;
+    padding:20px 0px;
+    border-radius:8px;
+}
+
+.food_category button {
+    border:none;
+    outline: none;
+    padding:7px 20px;
+    background: transparent;
+    color:#fff;
+}
+
+.food_category button img {
+    width:25px;
+    height:25px;
+}
+
+.foodBtnActive {
+    background:#fff !important;
+    border-radius: 5px;
+    color:aqua !important;
+}

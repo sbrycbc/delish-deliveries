@@ -7,6 +7,8 @@ import categoryImg03 from '../../../assets/images/paprika.png';
 import categoryImg04 from '../../../assets/images/paprika.png';
 
 
+import '../../../styles/category.css';
+
 const categoryData = [
     {
         display:'Fastfood',
@@ -33,7 +35,7 @@ const Category = () => {
     {
         categoryData.map((item,index)=> (
         <Col lg='3' md='4'>
-            <div className="category_item d-flex align-items-center gap-3">
+            <div className="category_item d-flex align-items-center gap-3 mb-4 mt-3">
                 <div className="category_img">
                     <img style={{width:'8rem'}} src={item.imgUrl} alt='category_item' />
                 </div>
