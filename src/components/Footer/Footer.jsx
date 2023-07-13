@@ -62,7 +62,7 @@ const Footer = () => {
 
       <Row className='mt-5'>
         <Col lg='6' md='6'>
-          <p className='copyright_text'>Copyright - 2023, webseite made by SbryCbc!</p>
+          <p className='copyright_text' >Copyright - 2023, webseite made by SbryCbc!</p>
         </Col>
         <Col lg='6' md='6'>
           <div className="social_links d-flex align-items-center gap-4 justify-content-end">
