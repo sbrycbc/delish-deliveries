@@ -66,7 +66,7 @@ const Footer = () => {
         </Col>
         <Col lg='6' md='6'>
           <div className="social_links d-flex align-items-center gap-4 justify-content-end">
-            <p className='m-0'>Follew:</p>
+            <p className='m-0'>Follow:</p>
             <span> <Link to='https://github.com/sbrycbc'><i class="ri-github-fill"></i></Link></span>
             <span> <Link to='https://www.instagram.com/lauf_frei_heit15/'><i class="ri-instagram-line"></i></Link></span>
             <span> <Link to='https://www.linkedin.com/in/sabriye-cebeci-039772266/'><i class="ri-linkedin-fill"></i></Link></span>

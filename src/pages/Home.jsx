@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Helmet from '../components/Helmet/Helmet.js'
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
 
 import paprika from '../assets/images/paprika.png';
+import whyUns from '../assets/images/why-uns.png';
+
 import '../styles/hero-section.css';
 import { Link } from 'react-router-dom';
 
@@ -19,7 +21,9 @@ import foodCategoryImg01 from '../assets/images/paprika.png';
 import foodCategoryImg02 from '../assets/images/paprika.png';
 import foodCategoryImg03 from '../assets/images/paprika.png';
 
+import ProductCard from '../components/Ul/product-card/ProductCard.jsx';
 
+import TestimonialSlider from '../components/Ul/slider/TestimonialSlider.jsx';
 
 const featureDate = [
   {
@@ -40,6 +44,35 @@ const featureDate = [
 ]
 
 const Home = () => {
+  const [category, setCategory] = useState("ALL");
+  const [allProducts, setAllProducts] = useState(products);
+
+  const [hotPizza, setHotPizza] = useState([])
+
+useEffect(()=>{
+  const filteredPizza = products.filter(item=>item.category === "Pizza")
+  const slicePizza = filteredPizza.slice(0,4)
+  setHotPizza(slicePizza)
+},[])
+
+useEffect(()=>{
+  if(category === "ALL"){
+    setAllProducts(products)
+  } 
+  if (category === "BURGER") {
+    const filteredProducts = products.filter(item=> item.category === "Burger")
+    setAllProducts(filteredProducts)
+  } 
+  if (category === "PIZZA") {
+    const filteredProducts = products.filter(item=> item.category === "Pizza")
+    setAllProducts(filteredProducts)
+  } 
+  if (category === "BREAD") {
+    const filteredProducts = products.filter(item=> item.category === "Bread")
+    setAllProducts(filteredProducts)
+  }
+},[category])
+
   return <Helmet title='Home'>
     <section>
       <Container>
@@ -101,21 +134,98 @@ const Home = () => {
         </Row>
   
         <Row>
-          <Col lg='12' className="text_center">
-            <h2>Popular Foods</h2>
+          <Col lg='12'>
+            <h2 className="text-center">Popular Foods</h2>
           </Col>
           <Col lg='12'>
             <div className="food_category d-flex align-items-center justify-content-center gap-5">
-            <button className='all_btn foodBtnActive'>Alles</button>
-            <button className='d-flex align-items-center gap-2'><img src={foodCategoryImg01} alt="category_1"/>Burger</button>
-            <button className='d-flex align-items-center gap-2'><img src={foodCategoryImg02} alt="category_2"/>Pizza</button>
-            <button className='d-flex align-items-center gap-2'><img src={foodCategoryImg03} alt="category_3"/>Bread</button>
+              <button className={`all_btn ${category === 'ALL' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("ALL")}>Alles</button>
+              <button className={`d-flex align-items-center gap-2 ${category === 'BURGER' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("BURGER")}><img src={foodCategoryImg01} alt="category_1"/>Burger</button>
+              <button className={`d-flex align-items-center gap-2 ${category === 'PIZZA' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("PIZZA")}><img src={foodCategoryImg02} alt="category_2"/>Pizza</button>
+              <button className={`d-flex align-items-center gap-2 ${category === 'BREAD' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("BREAD")}><img src={foodCategoryImg03} alt="category_3"/>Bread</button>
 
-          </div>
+            </div>
 
 
           </Col>
 
+            {
+              allProducts.map(item=> (
+                <Col lg='3' md='4' key={item.id} className='mt-5 '>
+                  <ProductCard item={item}/>
+                </Col>
+              ))
+            }
+
+
+        </Row>
+      </Container>
+    </section>
+    <section>
+      <Container>
+        <Row>
+          <Col lg="6" md="6">
+            <img src={whyUns} alt="why-uns" className='w-100'/>
+          </Col>
+          <Col lg="6" md="6">
+            <div className="why-tasty-treat">
+              <h2 className="tasty-treat-title mb-4">Why <span>Delish Deliveries?</span></h2>
+              <p className="tasty-treat-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. A distinctio molestias neque iure eveniet est sit commodi laudantium, incidunt doloremque quo, provident temporibus labore asperiores officia. Exercitationem facilis earum expedita.</p>
+              <ListGroup className='mt-5'>
+                <ListGroupItem className='border-0 ps-0'>
+                  <p className="choose-us-title d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Fresh and 
+                tasty foods</p>
+                  <p className="choose-us-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, voluptatibus.</p>
+                </ListGroupItem>
+                <ListGroupItem className='border-0 ps-0'>
+                  <p className="choose-us-title d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Quality 
+                support</p>
+                <p className="choose-us-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, voluptatibus.</p>
+
+                </ListGroupItem>
+                <ListGroupItem className='border-0 ps-0'>
+                  <p className="choose-us-title d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Order from any location</p>
+                <p className="choose-us-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, voluptatibus.</p>
+
+                </ListGroupItem>
+              </ListGroup>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+    <section className="pt-0">
+      <Container>
+        <Row>
+        <Col lg="12" className="text-center mb-5">
+              <h2>Hot Pizza</h2>
+            </Col>
+          {
+            hotPizza.map(item=>(
+              <Col lg="3" md="4" key={item.id}>
+              <ProductCard item={item}/>
+            </Col>
+            ))
+          }
+
+        </Row>
+      </Container>
+    </section>
+    <section className="pt-0">
+      <Container>
+        <Row>
+
+            <Col lg="6" md="6">
+              <div className="testimonial mb-4">
+                <h5 className="testimonial-subtitle mb-4">Testimonial</h5>
+                <h2 className="testimonial-title mb-4">What our <span>customers</span> are saying</h2>
+                <p className='testimonial-desc'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad deserunt harum similique nemo numquam maiores ratione beatae repellendus suscipit quisquam?</p>
+                <TestimonialSlider/>
+              </div>
+            </Col>
+            <Col lg="6" md="6" >
+              <img src={whyUns} alt="Image77" className="w-50"/>
+            </Col>
         </Row>
       </Container>
     </section>

@@ -37,3 +37,35 @@
     border-radius: 5px;
     color:aqua !important;
 }
+
+.tasty-treat-title span{
+    color:aqua;
+
+}
+
+.tasty-treat-desc {
+    color:#777;
+    line-height:28px;
+}
+
+.choose-us-title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.choose-us-title i {
+    font-weight: 500 !important;
+    color:#df2020;
+}
+
+.choose-us-desc {
+    color:#777;
+}
+
+.testimonial-subtitle {
+    color:aqua;
+}
+
+.testimonial-title span{
+    color:aqua;
+}
