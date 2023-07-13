@@ -15,11 +15,11 @@ const nav_links = [
     path: '/foods'
   },
   {
-    display: 'Cart',
+    display: 'Kart',
     path: '/cart'
   },
   {
-    display: 'Contact',
+    display: 'Kontakt',
     path: '/contact'
   },
 ];
