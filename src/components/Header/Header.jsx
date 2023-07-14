@@ -1,7 +1,8 @@
-import React, {useRef,useEffect} from 'react';
+import React, {useRef} from 'react';
 import { Container, Form } from 'reactstrap';
 import logo from '../../assets/images/sbry.png';
 import { NavLink, Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 import '../../styles/header.css';
 
@@ -26,22 +27,28 @@ const nav_links = [
 
 const Header = () => {
   const menuRef = useRef(null);
-  const headerRef = useRef(null);
+  // const headerRef = useRef(null);
+  const totalQuantity = useSelector(state => state.cart.totalQuantity);
+
   const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
 
-useEffect(()=> {
-  window.addEventListener("scroll",()=>{
-    if(document.body.scrollTop > 80 || document.documentElement.scrollTop >80) {
-      headerRef.current.classList.add("header__shrink")
-    } else {
-      headerRef.current.classList.remove("header__shrink")
-    }
-  })
-  return ()=>window.removeEventListener("scroll")
-},[])
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     if (
+  //       document.body.scrollTop > 80 ||
+  //       document.documentElement.scrollTop > 80
+  //     ) {
+  //       headerRef.current.classList.add("header__shrink");
+  //     } else {
+  //       headerRef.current.classList.remove("header__shrink");
+  //     }
+  //   });
 
+  //   return () => window.removeEventListener("scroll");
+  // }, []);
+//ref={headerRef}
   return (
-    <header className="header" ref={headerRef}>
+    <header className="header" >
       <Container>
         <div className="nav_wrapper d-flex align-items-center justify-content-between">
           <div className="logo">
@@ -68,16 +75,16 @@ useEffect(()=> {
 {/* ================ nav right icons ============ */}
          <div className="nav_right d-flex align-items-center gap-4">
           <span className="cart_icon">
-            <i class="ri-shopping-basket-fill"></i>
-            <span className="cart_badge">2</span>
+            <i className="ri-shopping-basket-fill"></i>
+            <span className="cart_badge">{totalQuantity}</span>
           </span>
 
           <span className="user">
-            <Link to='/login'><i class="ri-user-5-line"></i></Link>
+            <Link to='/login'><i className="ri-user-5-line"></i></Link>
           </span>
 
           <span className="mobile_menu" onClick={toggleMenu}>
-            <i class="ri-menu-add-fill"></i>
+            <i className="ri-menu-add-fill"></i>
           </span>
          </div>
 

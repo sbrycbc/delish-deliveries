@@ -55,7 +55,7 @@ const Footer = () => {
           <p>Abonnieren Sie unseren Newsletter</p>
           <div className="newsletter">
             <input type="email" placeholder='Enter your email' />
-            <span><i class="ri-send-plane-fill"></i></span>
+            <span><i className="ri-send-plane-fill"></i></span>
           </div>
         </Col>
       </Row>
@@ -67,9 +67,9 @@ const Footer = () => {
         <Col lg='6' md='6'>
           <div className="social_links d-flex align-items-center gap-4 justify-content-end">
             <p className='m-0'>Follow:</p>
-            <span> <Link to='https://github.com/sbrycbc'><i class="ri-github-fill"></i></Link></span>
-            <span> <Link to='https://www.instagram.com/lauf_frei_heit15/'><i class="ri-instagram-line"></i></Link></span>
-            <span> <Link to='https://www.linkedin.com/in/sabriye-cebeci-039772266/'><i class="ri-linkedin-fill"></i></Link></span>
+            <span> <Link to='https://github.com/sbrycbc'><i className="ri-github-fill"></i></Link></span>
+            <span> <Link to='https://www.instagram.com/lauf_frei_heit15/'><i className="ri-instagram-line"></i></Link></span>
+            <span> <Link to='https://www.linkedin.com/in/sabriye-cebeci-039772266/'><i className="ri-linkedin-fill"></i></Link></span>
           </div>
         </Col>
       </Row>

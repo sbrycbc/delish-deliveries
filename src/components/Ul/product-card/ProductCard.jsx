@@ -2,8 +2,23 @@ import React from 'react';
 import "../../../styles/product-card.css"
 import { Link } from 'react-router-dom';
 
+import { useDispatch } from 'react-redux';
+import { cartActions } from '../../../store/shopping-cart/cartSlice';
+
 const ProductCard = (props) => {
-    const {id, title, image01, price} = props.item
+    const {id, title, image01, price} = props.item;
+    const dispatch = useDispatch();
+    const addToCart = () => {
+      dispatch(
+        cartActions.addItem({
+          id,
+          title,
+          image01,
+          price
+        }));
+    };
+
+
   return (
     <div className='product_item'>
         <div className="product_img">
@@ -16,7 +31,7 @@ const ProductCard = (props) => {
             </h5>
             <div className='d-flex justify-content-between align-items-center'>
                 <span className='product_preis'>€{price}</span>
-                <button className='addToCard_btn'>Add to Card</button>
+                <button className='addToCard_btn' onClick={addToCart}>Add to Card</button>
             </div>
         </div>
     </div>

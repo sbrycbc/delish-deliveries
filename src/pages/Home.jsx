@@ -83,15 +83,15 @@ useEffect(()=>{
             <h1 className='mb-4 hero_title'><span>Bist Du Hunger???</span> <br /> Kommm einfach!!!<span> an deiner Tür!!!</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisicing elit</p>
             <div className='hero_btns d-flex align-items-center gap-5 mt-3'>
-              <button className='bestellt_btn d-flex align-items-center justify-content-between' >Jetzt Bestellt <i class="ri-arrow-right-s-fill"></i></button>
+              <button className='bestellt_btn d-flex align-items-center justify-content-between' >Jetzt Bestellt <i className="ri-arrow-right-s-fill"></i></button>
               <button className='all_foods_btn'><Link to='/foods'>Sehen alle</Link></button>
             </div>
             <div className='hero_service d-flex align-items-center gap-5 mt-5'>
               <p className='d-flex align-items-center gap-2 '>
                 <span className='versand_icon'>
-                  <i class="ri-car-fill"></i></span>Kostenloser Versand </p>
+                  <i className="ri-car-fill"></i></span>Kostenloser Versand </p>
               <p className='d-flex align-items-center gap-2 '>
-                <span className='versand_icon'><i class="ri-folder-shield-line"></i></span>{' '}
+                <span className='versand_icon'><i className="ri-folder-shield-line"></i></span>{' '}
                 100% secure checkout</p>
             </div>
           </div>
@@ -173,18 +173,18 @@ useEffect(()=>{
               <p className="tasty-treat-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. A distinctio molestias neque iure eveniet est sit commodi laudantium, incidunt doloremque quo, provident temporibus labore asperiores officia. Exercitationem facilis earum expedita.</p>
               <ListGroup className='mt-4'>
                 <ListGroupItem className='border-0 ps-0'>
-                  <p className="choose-us-title d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Fresh and 
+                  <p className="choose-us-title d-flex align-items-center gap-2"><i className="ri-checkbox-circle-line"></i> Fresh and 
                 tasty foods</p>
                   <p className="choose-us-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, voluptatibus.</p>
                 </ListGroupItem>
                 <ListGroupItem className='border-0 ps-0'>
-                  <p className="choose-us-title d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Quality 
+                  <p className="choose-us-title d-flex align-items-center gap-2"><i className="ri-checkbox-circle-line"></i> Quality 
                 support</p>
                 <p className="choose-us-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, voluptatibus.</p>
 
                 </ListGroupItem>
                 <ListGroupItem className='border-0 ps-0'>
-                  <p className="choose-us-title d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Order from any location</p>
+                  <p className="choose-us-title d-flex align-items-center gap-2"><i className="ri-checkbox-circle-line"></i> Order from any location</p>
                 <p className="choose-us-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, voluptatibus.</p>
 
                 </ListGroupItem>
