@@ -22,6 +22,7 @@ const TestimonialSlider = () => {
   return (
     <Slider {...settings}>
         <div>
+        <div>
             <p className="review-text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, corrupti error at sed sit inventore libero autem assumenda, quibusdam quisquam culpa sint cum pariatur, rem impedit unde ad laborum non?"</p>
         </div>
         <div className="slider-content d-flex align-items-center gap-3">
@@ -29,6 +30,8 @@ const TestimonialSlider = () => {
             <h6>John Doe</h6>
 
         </div>
+        </div>
+        <div>
         <div>
             <p className="review-text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, corrupti error at sed sit inventore libero autem assumenda, quibusdam quisquam culpa sint cum pariatur, rem impedit unde ad laborum non?"</p>
         </div>
@@ -37,6 +40,8 @@ const TestimonialSlider = () => {
             <h6>Mitchell Marsch</h6>
 
         </div>
+        </div>
+        <div>
         <div>
             <p className="review-text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, corrupti error at sed sit inventore libero autem assumenda, quibusdam quisquam culpa sint cum pariatur, rem impedit unde ad laborum non?"</p>
         </div>
@@ -45,6 +50,8 @@ const TestimonialSlider = () => {
             <h6>Steven Crock</h6>
 
         </div>
+        </div>
+        <div>
         <div>
             <p className="review-text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, corrupti error at sed sit inventore libero autem assumenda, quibusdam quisquam culpa sint cum pariatur, rem impedit unde ad laborum non?"</p>
         </div>
@@ -52,6 +59,7 @@ const TestimonialSlider = () => {
             <img src={ava04} alt="ava04"/>
             <h6>John Doe</h6>
 
+        </div>
         </div>
     </Slider>
   )

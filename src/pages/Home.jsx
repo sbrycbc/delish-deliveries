@@ -224,7 +224,7 @@ useEffect(()=>{
               </div>
             </Col>
             <Col lg="6" md="6" >
-              <img src={whyUns} alt="Image77" className="w-50"/>
+              <img src={whyUns} alt="Image77" className="w-100 mt-3"/>
             </Col>
         </Row>
       </Container>
