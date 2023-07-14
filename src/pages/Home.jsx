@@ -25,7 +25,7 @@ import ProductCard from '../components/Ul/product-card/ProductCard.jsx';
 
 import TestimonialSlider from '../components/Ul/slider/TestimonialSlider.jsx';
 
-const featureDate = [
+const featureData = [
   {
       title:'Quick Delivery',
       imgUrl: featureImg01,
@@ -121,8 +121,8 @@ useEffect(()=>{
           </Col>
 
           {
-            featureDate.map((item,index)=>(
-              <Col lg='4' md='4' key={index} className='mt-5' >
+            featureData.map((item,index)=>(
+              <Col lg='4' md='6' sm="6" key={index} className='mt-5' >
                 <div className="feature_item text-center px-5 py-3">
                   <img src={item.imgUrl} alt="feature_img" className='w-30 mb-3' style={{width:'20rem'}}/>
                   <h5 className=' fw-bold mb-3' >{item.title}</h5>
@@ -151,7 +151,7 @@ useEffect(()=>{
 
             {
               allProducts.map(item=> (
-                <Col lg='3' md='4' key={item.id} className='mt-5 '>
+                <Col lg='3' md='4' sm="6" xs="6" key={item.id} className='mt-5 '>
                   <ProductCard item={item}/>
                 </Col>
               ))
@@ -161,7 +161,7 @@ useEffect(()=>{
         </Row>
       </Container>
     </section>
-    <section>
+    <section className='why-choose-us'>
       <Container>
         <Row>
           <Col lg="6" md="6">
@@ -171,7 +171,7 @@ useEffect(()=>{
             <div className="why-tasty-treat">
               <h2 className="tasty-treat-title mb-4">Why <span>Delish Deliveries?</span></h2>
               <p className="tasty-treat-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. A distinctio molestias neque iure eveniet est sit commodi laudantium, incidunt doloremque quo, provident temporibus labore asperiores officia. Exercitationem facilis earum expedita.</p>
-              <ListGroup className='mt-5'>
+              <ListGroup className='mt-4'>
                 <ListGroupItem className='border-0 ps-0'>
                   <p className="choose-us-title d-flex align-items-center gap-2"><i class="ri-checkbox-circle-line"></i> Fresh and 
                 tasty foods</p>
