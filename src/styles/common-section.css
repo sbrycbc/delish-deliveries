@@ -7,3 +7,15 @@
     background-position: center;
     padding: 80px 0px;
   }
+
+  @media only screen and (max-width:768px) {
+    .common_section {
+      height:150px;
+    }
+  }
+
+  @media only screen and (max-width:576px) {
+    .common_section {
+      height:100px;
+    }
+  }
