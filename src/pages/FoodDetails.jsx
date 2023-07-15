@@ -7,6 +7,9 @@ import CommonSection from '../components/Ul/common-section/CommonSection';
 
 import {Container, Row, Col} from "reactstrap"
 
+import { useDispatch } from 'react-redux';
+import { cartActions } from '../store/shopping-cart/cartSlice';
+
 import "../styles/product-details.css"
 
 import ProductCard from '../components/Ul/product-card/ProductCard';
@@ -14,19 +17,44 @@ import ProductCard from '../components/Ul/product-card/ProductCard';
 const FoodDetails = () => {
 
   const [tab, setTab] = useState('desc')
+  const [enteredName, setEnteredName] = useState("")
+  const [enteredEmail, setEnteredEmail] = useState("")
+  const [enteredReview, setEnteredReview] = useState("")
+
 
   const {id} = useParams()
+
+  const dispatch = useDispatch()
 
   const product = products.find(product=> product.id===id)
   const [previewImg, setPreviewImg] = useState(product.image01)
 
-  const {title, price, category, desc} = product
+  const {title, price, category, desc, image01} = product
 
   const relatedProducts = products.filter(item=> category === item.category)
+
+  const addItem =()=> {
+    dispatch(cartActions.addItem({
+      id,
+      title,
+      price,
+      image01
+    }))
+  }
+
+  const submitHandler = (e)=>{
+    e.preventDefault();
+  }
 
   useEffect(() => {
     setPreviewImg(product.image01)
   }, [product])
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+    console.log(window)
+  }, [product])
+
   
 
 
@@ -62,7 +90,7 @@ const FoodDetails = () => {
                 <span className='product_price'>€{price}</span>
                 </p>
                 <p className='category mb-5'>Category : <span>{category}</span></p>
-                <button className='addToCard_btn'>Add to Cart</button>
+                <button onClick={addItem} className='addToCard_btn'>Add to Cart</button>
               </div>
             </Col>
             <Col lg="12">
@@ -82,15 +110,18 @@ const FoodDetails = () => {
 
                   <p className='feedback_text'>great product</p>
                 </div>
-                <form className='form'>
+                <form className='form' onSubmit={submitHandler}>
                   <div className="form_group">
-                    <input type="text" placeholder="Enter your name" />
+                    <input type="text" placeholder="Enter your name" 
+                    onChange={()=>e=>setEnteredName(e.target.value)} required/>
                   </div>
                   <div className="form_group">
-                    <input type="text" placeholder="Enter your name" />
+                    <input type="text" placeholder="Enter your email" 
+                    onChange={()=>e=>setEnteredEmail(e.target.value)} required/>
                   </div>
                   <div className="form_group">
-                    <textarea rows={5} type="text" placeholder="Enter your name" />
+                    <textarea rows={5} type="text" placeholder="Write your review" 
+                    onChange={()=>e=>setEnteredReview(e.target.value)} required/>
                   </div>
                   <button type="submit" className='addToCard_btn'>Submit</button>
                 </form>
@@ -100,7 +131,7 @@ const FoodDetails = () => {
 
             </Col>
             <Col lg="12" className='mb-5 mt-4'>
-              <h5>You might also like</h5>
+              <h2 className="related_Product-title">You might also like</h2>
             </Col>
             {
               relatedProducts.map(item=>(

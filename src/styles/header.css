@@ -116,7 +116,7 @@
       .menu a {
         font-size: 0.9rem;
       }
-      .mobile__menu {
+      .mobile_menu {
         display: block;
       }
       .cart_icon i,
@@ -124,7 +124,7 @@
       .mobile_menu {
         font-size:1rem;  
       }
-      .show__menu {
+      .show_menu {
         display: block;
       }
 }

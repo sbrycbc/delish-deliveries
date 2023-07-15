@@ -137,6 +137,37 @@
     .category span {
       font-size: 0.8rem !important;
     }
+
+    .tabs {
+        margin-top: 30px;
+    }
+
+    .tabs h6 {
+        font-size: .9rem;
+    }
+
+    .tab_content p,
+    .user_name,
+    .feedback_text{
+        font-size: .8rem;
+
+    }
+
+    .user_email {
+        font-size: .7rem;
+
+    }
+
+    .form {
+        width:100% !important;
+        margin-top: 50px;
+    }
+
+    .form_group input::placeholder,
+    .form_group textarea::placeholder {
+        font-size: .8rem;
+
+    }
   
     .description_content p {
       font-size: 0.8rem;

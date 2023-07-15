@@ -34,7 +34,7 @@ const Header = () => {
   const dispatch = useDispatch()
 
 
-  const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
+  const toggleMenu = () => menuRef.current.classList.toggle("show_menu");
   const toggleCart = () => {
           dispatch(cartUiActions.toggle())
   }
