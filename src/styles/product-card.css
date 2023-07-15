@@ -26,17 +26,17 @@
 
 .product_preis {
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #df2020;
 }
 
 .addToCard_btn {
   border: none;
-  padding: 7px 25px;
+  padding: 5px 20px;
   background: #df2020;
   color: #fff;
   border-radius: 5px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 @media only screen and (max-width: 992px){
