@@ -32,7 +32,10 @@ const Checkout = () => {
       city: enterCity,
       postalCode:postalCode,
     };
-    
+
+    shippingInfo.push(userShippingAddress)
+    console.log(shippingInfo)
+
   }
 
 
@@ -62,8 +65,11 @@ const Checkout = () => {
               <div className="form_group">
                 <input type="number" placeholder="Postleitzahl" required onChange={e=> setPostalCode(e.target.value)}/>
               </div>
+              <button type="submit" className="addToCart_btn">
+                Payment
+              </button>
+
             </form>
-            <button className="addToCart_btn">Payment</button>
 
           </Col>
           <Col lg="4" md="6">

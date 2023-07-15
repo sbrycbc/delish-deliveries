@@ -24,6 +24,15 @@
     gap: 1rem;
     margin-bottom: 0.7rem;
   }
+
+  @media only screen and (max-width: 768px) {
+    .checkout_bill h6 {
+        font-size: .9rem;
+  }
+    .checkout_bill {
+        margin-top: 40px;
+    } 
+}
   
   @media only screen and (max-width: 480px) {
     .checkoutMessage {
