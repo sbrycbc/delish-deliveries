@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import products from '../assets/data/products';
 
 import { useParams } from 'react-router-dom';
@@ -43,8 +43,38 @@ const FoodDetails = () => {
                 <p className='product_price'>{" "}Price:
                 <span className='product_price'>€34</span>
                 </p>
-                <p className=''>Category : <span>Burger</span></p>
+                <p className='category mb-5'>Category : <span>Burger</span></p>
                 <button className='addToCard_btn'>Add to Cart</button>
+              </div>
+            </Col>
+            <Col lg="12">
+              <div className="tabs d-flex align-items-center gap-3 py-2">
+                <h6>Description</h6>
+                <h6>Review</h6>
+
+              </div>
+              <div className="tab_content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt enim nisi distinctio veritatis optio voluptatibus nemo voluptas repellendus eaque voluptate accusantium alias consequuntur dicta unde, officiis sunt praesentium, iste soluta!</p>
+              </div>
+              <div className="tab_form">
+                <div className="review">
+                  <p className="user_name mb-0">John Doe</p>
+                  <p className="user_email mb-0">jhon1@gmail.com</p>
+
+                  <p className='feedback_text'>great product</p>
+                </div>
+                <form className='form'>
+                  <div className="form_group">
+                    <input type="text" placeholder="Enter your name" />
+                  </div>
+                  <div className="form_group">
+                    <input type="text" placeholder="Enter your name" />
+                  </div>
+                  <div className="form_group">
+                    <textarea rows={5} type="text" placeholder="Enter your name" />
+                  </div>
+                  <button type="submit" className='addToCard_btn'>Submit</button>
+                </form>
               </div>
             </Col>
           </Row>
