@@ -35,7 +35,7 @@ const Carts = () => {
         <div className="cart_bottom  d-flex align-items-center justify-content-between">
             <h6>Subtotal : <span>€{totalAmount}</span></h6>
             <button>
-                <Link to="/checkout">Checkout</Link>
+                <Link to="/checkout" className="cart_checkout">Checkout</Link>
             </button>
         </div>
 

@@ -19,11 +19,11 @@ const ÜberUns = () => {
           <Container>
               <Row className="mb-5">
               <Col lg='6' md='6'>
-                <div className='überuns_content'>
-                  <h4 className='überuns_title mt-5' >ÜberUns</h4>
+                <div className='uberuns_content'>
+                  <h4 className='uberuns_title mt-5' >ÜberUns</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,</p>
                 </div>
-                <h4 className="mt-5">Das Unternehmen</h4>
+                <h4 className="uberuns_title mt-5">Das Unternehmen</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed corporis excepturi doloremque! Porro impedit pariatur nostrum quod architecto aliquid, sed odit voluptate neque facere accusantium vero error consectetur rerum, voluptatibus incidunt, molestias repellendus blanditiis minus nam aspernatur! Eos cumque odit esse vel quia illo qui sit at, omnis et consequatur!</p>
                 </Col>
 
@@ -35,7 +35,7 @@ const ÜberUns = () => {
               </Row>
               <Row>
             <Col lg='12' className='text-center'>
-              <h4>Unsere Team</h4>
+              <h4 className="uberuns_title">Unsere Team</h4>
               </Col>
               <Col lg='12' className='text-center'>
                 <UnsereTeamSlider/>

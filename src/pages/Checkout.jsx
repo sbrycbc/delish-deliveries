@@ -21,7 +21,7 @@ const Checkout = () => {
 
 
   const cartTotalAmount = useSelector(state => state.cart.totalAmount)
-  const shippingCost = 5
+  const shippingCost = cartTotalAmount < 20 ? 5 : 0
 
   const totalAmount = cartTotalAmount + Number(shippingCost)
 
@@ -48,7 +48,7 @@ const Checkout = () => {
       <Container>
         <Row>
           <Col lg="8" md="6">
-            <h6 className="mb-4">Shipping Address</h6>
+            <h6 className="mb-4">Lieferung Address</h6>
             <form className="checkout_form" onSubmit={submitHandler}>
               <div className="form_group">
                 <input type="text" placeholder="Enter your name" required onChange={e=> setEnterName(e.target.value)}/>
@@ -79,7 +79,7 @@ const Checkout = () => {
           <Col lg="4" md="6">
             <div className='checkout_bill'>
               <h6 className='d-flex justify-content-between align-items-center mb-3'>Subtotal: <span>€{cartTotalAmount}</span></h6>
-              <h6 className='d-flex justify-content-between align-items-center mb-3'>Shipping: <span>€{shippingCost}</span></h6>
+              <h6 className='d-flex justify-content-between align-items-center mb-3'>Versand: <span>€{shippingCost}</span></h6>
               <div className='checkout_total'>
                 <h5 className='d-flex justify-content-between align-items-center'>Total: <span>€{totalAmount}</span></h5>
 

@@ -43,20 +43,20 @@
 }
 .cart_bottom h6{
     font-size: 1rem;
-    color: rgba(0, 0, 0, 0.39);
+    color: #861b47;
 }
-.cart__bottom h6 span {
+.cart_bottom h6 span {
     font-size: 1.3rem;
     font-weight: 600;
 }
-.cart__bottom button {
+.cart_bottom button {
     border: none;
     padding: 4px 20px;
     border-radius: 5px;
-    background: #fff;
-    color: #212245;
+    background: #099e9d;
+    color: #fff;
 }
-.cart__bottom button a {
-    color: #212245;
+.cart_bottom button a {
+    color: #fff;
     font-weight: 600;
 }
