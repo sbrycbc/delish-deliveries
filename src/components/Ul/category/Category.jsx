@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'reactstrap';
 import categoryImg01 from '../../../assets/images/product_2.1.jpg';
 import categoryImg02 from '../../../assets/images/product_01.3.jpg';
 import categoryImg03 from '../../../assets/images/döner-01.jpg';
-import categoryImg04 from '../../../assets/images/bread.png';
+import categoryImg04 from '../../../assets/images/bread-01.png';
 
 
 

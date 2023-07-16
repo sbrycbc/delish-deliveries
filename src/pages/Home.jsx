@@ -20,7 +20,7 @@ import products from '../assets/data/products.js';
 
 import foodCategoryImg01 from '../assets/images/product_01.3.jpg';
 import foodCategoryImg02 from '../assets/images/product_2.1.jpg';
-import foodCategoryImg03 from '../assets/images/bread(2).png';
+import foodCategoryImg03 from '../assets/images/bread-01.png';
 import foodCategoryImg04 from '../assets/images/döner-02.jpg';
 
 
