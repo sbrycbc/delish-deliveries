@@ -22,8 +22,8 @@ const nav_links = [
     path: '/cart'
   },
   {
-    display: 'Kontakt',
-    path: '/contact'
+    display: 'ÜberUns',
+    path: '/überuns'
   },
 ];
 

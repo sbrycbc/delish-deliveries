@@ -7,7 +7,7 @@ import FoodDetails from '../pages/FoodDetails';
 import Cart from '../pages/Cart';
 import Checkout from '../pages/Checkout';
 import Login from '../pages/Login';
-import Contact from '../pages/Contact';
+import ÜberUns from '../pages/ÜberUns';
 import Register from '../pages/Register';
 import Payment from '../pages/Payment';
 
@@ -23,7 +23,7 @@ const Routers = () => {
     <Route path='/cart' element={ <Cart/> } />
     <Route path='/checkout' element={ <Checkout/> } />
     <Route path='/login' element={ <Login/> } />
-    <Route path='/contact' element={ <Contact/> } />
+    <Route path='/überuns' element={ <ÜberUns/> } />
     <Route path='/register' element={ <Register/> } />
     <Route path='/payment' element={ <Payment/> } />
    </Routes>
