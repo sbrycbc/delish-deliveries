@@ -1,0 +1,33 @@
+.uberuns_img img{
+    margin-left:6rem;
+    width:400px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+@media only screen and (max-width: 992px) {
+    .uberuns_img img{
+        margin-left:4rem;
+        margin-top:3rem;
+        width:350px;
+
+    
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .uberuns_img img{
+        margin-top:3rem;
+        margin-left:1.8rem;
+
+    
+    }
+}
+
+@media only screen and (max-width: 576px) {
+.uberuns_img img{
+    margin-left:0;
+    width:300px;
+
+}
+}

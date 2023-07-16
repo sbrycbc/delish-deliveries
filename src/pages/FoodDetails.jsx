@@ -10,6 +10,9 @@ import {Container, Row, Col} from "reactstrap"
 import { useDispatch } from 'react-redux';
 import { cartActions } from '../store/shopping-cart/cartSlice';
 
+import TestimonialSlider from '../components/Ul/slider/TestimonialSlider.jsx';
+
+
 import "../styles/product-details.css"
 
 import ProductCard from '../components/Ul/product-card/ProductCard';
@@ -104,11 +107,8 @@ console.log(enteredName, enteredEmail,enteredReview)
                 tab === "desc" ? <div className="tab_content">
                 <p>{desc}</p>
               </div> : <div className="tab_form">
-                <div className="review pt-5">
-                  <p className="user_name mb-0">John Doe</p>
-                  <p className="user_email mb-0">jhon1@gmail.com</p>
-
-                  <p className='feedback_text'>great product</p>
+                <div className="review pt-5 mb-5">
+                  <TestimonialSlider/>
                 </div>
                 <form className='form' onSubmit={submitHandler}>
                   <div className="form_group">

@@ -3,6 +3,12 @@
     padding-left: 50px;
 }
 
+.review {
+  width:50%;
+  margin: auto;
+
+}
+
 .product_price {
     display: flex;
     align-items: center;
@@ -74,7 +80,7 @@
   }
 
 .tab_active {
-    color:#df2020;
+    color:#099e9d;
 }
 
 .user_name {

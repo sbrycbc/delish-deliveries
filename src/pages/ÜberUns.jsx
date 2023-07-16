@@ -1,6 +1,8 @@
 import React from 'react';
 import Helmet from '../components/Helmet/Helmet';
-import paprika from '../assets/images/paprika.png';
+import uberuns from '../assets/images/uberuns.png';
+import "../styles/uberuns.css";
+
 
 import { Container, Row, Col } from 'reactstrap';
 
@@ -13,38 +15,25 @@ const ÜberUns = () => {
 
   return (
     <Helmet title= "ÜberUns">
-      
         <section>
           <Container>
-              <Row>
+              <Row className="mb-5">
               <Col lg='6' md='6'>
                 <div className='überuns_content'>
-                  <h5 className='überuns_title mt-5' >ÜberUns</h5>
+                  <h4 className='überuns_title mt-5' >ÜberUns</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,</p>
                 </div>
+                <h4 className="mt-5">Das Unternehmen</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed corporis excepturi doloremque! Porro impedit pariatur nostrum quod architecto aliquid, sed odit voluptate neque facere accusantium vero error consectetur rerum, voluptatibus incidunt, molestias repellendus blanditiis minus nam aspernatur! Eos cumque odit esse vel quia illo qui sit at, omnis et consequatur!</p>
                 </Col>
 
                 <Col lg='6' md='6'>
-                  <div className='überuns_img'>
-                  <img src={paprika}  alt='paprika' className='w-100'/>
+                  <div className='uberuns_img'>
+                  <img src={uberuns}  alt='uberuns'/>
                   </div>
                 </Col>
               </Row>
-          </Container>
-        </section>
-        <section>
-          <Container>
-            <Row>
-            <Col lg='12' className='text-center'>
-              <h4>Das Unternehmen</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed corporis excepturi doloremque! Porro impedit pariatur nostrum quod architecto aliquid, sed odit voluptate neque facere accusantium vero error consectetur rerum, voluptatibus incidunt, molestias repellendus blanditiis minus nam aspernatur! Eos cumque odit esse vel quia illo qui sit at, omnis et consequatur!</p>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-        <section>
-          <Container>
-            <Row>
+              <Row>
             <Col lg='12' className='text-center'>
               <h4>Unsere Team</h4>
               </Col>
@@ -53,6 +42,12 @@ const ÜberUns = () => {
               </Col>
 
             </Row>
+          </Container>
+        </section>
+
+        <section>
+          <Container>
+
           </Container>
         </section>
     </Helmet>
