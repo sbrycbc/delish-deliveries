@@ -188,22 +188,20 @@ useEffect(()=>{
           </Col>
           <Col lg="6" md="6">
             <div className="why-tasty-treat">
-              <h2 className="tasty-treat-title mb-4">Why <span>Delish Deliveries?</span></h2>
+              <h2 className="tasty-treat-title mb-4">Warum <span>Delish Deliveries?</span></h2>
               <p className="tasty-treat-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. A distinctio molestias neque iure eveniet est sit commodi laudantium, incidunt doloremque quo, provident temporibus labore asperiores officia. Exercitationem facilis earum expedita.</p>
               <ListGroup className='mt-4'>
                 <ListGroupItem className='border-0 ps-0'>
-                  <p className="choose-us-title d-flex align-items-center gap-2"><i className="ri-checkbox-circle-line"></i> Fresh and 
-                tasty foods</p>
+                  <p className="choose-us-title d-flex align-items-center gap-2"><i className="ri-checkbox-circle-line"></i> Frische und leckere Imbiss</p>
                   <p className="choose-us-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, voluptatibus.</p>
                 </ListGroupItem>
                 <ListGroupItem className='border-0 ps-0'>
-                  <p className="choose-us-title d-flex align-items-center gap-2"><i className="ri-checkbox-circle-line"></i> Quality 
-                support</p>
+                  <p className="choose-us-title d-flex align-items-center gap-2"><i className="ri-checkbox-circle-line"></i> Qualität unterstützen</p>
                 <p className="choose-us-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, voluptatibus.</p>
 
                 </ListGroupItem>
                 <ListGroupItem className='border-0 ps-0'>
-                  <p className="choose-us-title d-flex align-items-center gap-2"><i className="ri-checkbox-circle-line"></i> Order from any location</p>
+                  <p className="choose-us-title d-flex align-items-center gap-2"><i className="ri-checkbox-circle-line"></i> Bestellen von jedem Ort</p>
                 <p className="choose-us-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, voluptatibus.</p>
 
                 </ListGroupItem>
