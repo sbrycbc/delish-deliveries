@@ -101,8 +101,12 @@ useEffect(()=>{
             <h1 className='mb-4 hero_title'><span>Hast Du Hunger???</span> <br /> Kommm einfach!!!<span> an deiner Tür!!!</span></h1>
             <p>{randomText}</p>
             <div className='hero_btns d-flex align-items-center gap-5 mt-3'>
-              <button className='bestellt_btn d-flex align-items-center justify-content-between' >Jetzt Bestellen <i className="ri-arrow-right-s-fill"></i></button>
-              <button className='all_foods_btn'><Link to='/foods'>Sehen alle</Link></button>
+              <button className='bestellt_btn d-flex align-items-center justify-content-between'> 
+              <Link to='/cart'>Jetzt Bestellen <i className="ri-arrow-right-s-fill"></i>
+              </Link></button>
+
+              <button className='all_foods_btn'>
+                <Link to='/foods'>Sehen alle</Link></button>
             </div>
             <div className='hero_service d-flex align-items-center gap-5 mt-5'>
               <p className='d-flex align-items-center gap-2 '>
