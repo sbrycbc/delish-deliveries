@@ -8,6 +8,46 @@
     padding: 80px 0px;
   }
 
+  .common_sectionBurger {
+    background: linear-gradient(#212245b2, #212245b2),
+      url("../assets/images/product_04.jpg");
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0px;
+  }
+
+  .common_sectionDöner {
+    background: linear-gradient(#212245b2, #212245b2),
+      url("../assets/images/döner-04.jpg");
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0px;
+  }
+
+  .common_sectionPizza {
+    background: linear-gradient(#212245b2, #212245b2),
+      url("../assets/images/product_3.3.jpg");
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0px;
+  }
+
+  .common_sectionBread {
+    background: linear-gradient(#212245b2, #212245b2),
+      url("../assets/images/bread-01.png");
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0px;
+  }
+
   @media only screen and (max-width:768px) {
     .common_section {
       height:150px;

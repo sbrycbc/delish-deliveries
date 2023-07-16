@@ -30,6 +30,7 @@ const FoodDetails = () => {
   const dispatch = useDispatch()
 
   const product = products.find(product=> product.id===id)
+
   const [previewImg, setPreviewImg] = useState(product.image01)
 
   const {title, price, category, desc, image01} = product
@@ -62,7 +63,7 @@ const FoodDetails = () => {
 console.log(enteredName, enteredEmail,enteredReview)
 
   return <Helmet title="Product-details">
-    <CommonSection title={title}/>
+    <CommonSection title={title} category={category}/>
       <section>
         <Container>
           <Row>
@@ -98,8 +99,8 @@ console.log(enteredName, enteredEmail,enteredReview)
             </Col>
             <Col lg="12">
               <div className="tabs d-flex align-items-center gap-3 py-2">
-                <h6 className={`${tab==="desc"?"tab_active":''}`} onClick={()=>setTab("desc")}>Description</h6>
-                <h6 className={`${tab==="rev"?"tab_active":''}`} onClick={()=>setTab("rev")}>Review</h6>
+                <h6 className={`${tab==="desc"?"tab_active":''}`} onClick={()=>setTab("desc")}>Beschreibung</h6>
+                <h6 className={`${tab==="rev"?"tab_active":''}`} onClick={()=>setTab("rev")}>Kommentar</h6>
 
               </div>
 
@@ -132,7 +133,7 @@ console.log(enteredName, enteredEmail,enteredReview)
 
             </Col>
             <Col lg="12" className='mb-5 mt-4'>
-              <h2 className="related_Product-title">You might also like</h2>
+              <h2 className="related_Product-title">Mehr entdecken!</h2>
             </Col>
             {
               relatedProducts.map(item=>(

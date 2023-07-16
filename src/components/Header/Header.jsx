@@ -1,5 +1,5 @@
-import React, {useRef} from 'react';
-import { Container, Form } from 'reactstrap';
+import React, {useRef, useEffect} from 'react';
+import { Container} from 'reactstrap';
 import logo from '../../assets/images/sbry.png';
 import { NavLink, Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
@@ -29,7 +29,7 @@ const nav_links = [
 
 const Header = () => {
   const menuRef = useRef(null);
-  // const headerRef = useRef(null);
+  const headerRef = useRef(null);
   const totalQuantity = useSelector((state) => state.cart.totalQuantity );
   const dispatch = useDispatch()
 
@@ -39,23 +39,27 @@ const Header = () => {
           dispatch(cartUiActions.toggle())
   }
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     if (
-  //       document.body.scrollTop > 80 ||
-  //       document.documentElement.scrollTop > 80
-  //     ) {
-  //       headerRef.current.classList.add("header__shrink");
-  //     } else {
-  //       headerRef.current.classList.remove("header__shrink");
-  //     }
-  //   });
+  useEffect(() => {
 
-  //   return () => window.removeEventListener("scroll");
-  // }, []);
+      const handleScroll = () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        headerRef.current.classList.add("header_shrink");
+      } else {
+        headerRef.current.classList.remove("header_shrink");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 //ref={headerRef}
   return (
-    <header className="header" >
+    <header className="header" ref={headerRef}>
       <Container>
         <div className="nav_wrapper d-flex align-items-center justify-content-between">
           <div className="logo">

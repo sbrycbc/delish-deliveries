@@ -62,8 +62,11 @@
     color:#777;
 }
 
+.hero_img {
+    justify-content: end;
+}
+
 .hero_img img{
-    margin-left:6rem;
     width:450px;
     border-radius: 10px;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
@@ -192,5 +195,28 @@
         background:#861b47 !important;
         border-radius: 5px;
         color:#fff !important;
+    }
+
+    .hero_img img{
+        width:400px;
+        margin:auto !important;
+
+    }
+    .why_uns-img {
+        width:400px;
+        margin-left:3rem;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+ 
+    .hero_img img{
+        width:300px;
+        margin:auto !important;
+
+    }
+    .why_uns-img {
+        width:300px;
+        margin:2.3rem;
     }
 }

@@ -28,6 +28,8 @@ import ProductCard from '../components/Ul/product-card/ProductCard.jsx';
 
 import TestimonialSlider from '../components/Ul/slider/TestimonialSlider.jsx';
 
+import zitate from '../assets/data/zitate.js';
+
 const featureData = [
   {
       title:'Schnelle Lieferung',
@@ -51,6 +53,11 @@ const Home = () => {
   const [allProducts, setAllProducts] = useState(products);
 
   const [hotPizza, setHotPizza] = useState([])
+
+  const randomZahl = Math.floor(Math.random()*40)+1;
+  const randomText = zitate[randomZahl]
+
+
 
 useEffect(()=>{
   const filteredPizza = products.filter(item=>item.category === "Pizza")
@@ -80,6 +87,10 @@ useEffect(()=>{
   }
 },[category])
 
+
+
+
+
   return <Helmet title='Home'>
     <section>
       <Container>
@@ -87,10 +98,10 @@ useEffect(()=>{
         <Col lg='6' md='6'>
           <div className='hero_content'>
             <h5 className='mb-3'>Einfache Bestellung und Schnelle Lieferung</h5>
-            <h1 className='mb-4 hero_title'><span>Bist Du Hunger???</span> <br /> Kommm einfach!!!<span> an deiner Tür!!!</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisicing elit</p>
+            <h1 className='mb-4 hero_title'><span>Hast Du Hunger???</span> <br /> Kommm einfach!!!<span> an deiner Tür!!!</span></h1>
+            <p>{randomText}</p>
             <div className='hero_btns d-flex align-items-center gap-5 mt-3'>
-              <button className='bestellt_btn d-flex align-items-center justify-content-between' >Jetzt Bestellt <i className="ri-arrow-right-s-fill"></i></button>
+              <button className='bestellt_btn d-flex align-items-center justify-content-between' >Jetzt Bestellen <i className="ri-arrow-right-s-fill"></i></button>
               <button className='all_foods_btn'><Link to='/foods'>Sehen alle</Link></button>
             </div>
             <div className='hero_service d-flex align-items-center gap-5 mt-5'>
@@ -105,7 +116,7 @@ useEffect(()=>{
         </Col>
 
         <Col lg='6' md='6' >
-          <div className='hero_img d-flex justify-content-end'>
+          <div className='hero_img d-flex'>
           <img src={lieferung}  alt='lieferung'/>
           </div>
         </Col>
@@ -129,8 +140,8 @@ useEffect(()=>{
 
           {
             featureData.map((item,index)=>(
-              <Col lg='4' md='6' sm="6" key={index} className='mt-5' >
-                <div className="feature_item text-center px-5 py-3">
+              <Col lg='4' md='6' sm="12" xs="12" key={index} className='mt-5 gap-3 mb-3' >
+                <div className="feature_item text-center">
                   <img src={item.imgUrl} alt="feature_img" className='w-30 mb-3' style={{width:'20rem'}}/>
                   <h5 className=' fw-bold mb-3' >{item.title}</h5>
                   <p>{item.desc}</p>
@@ -226,7 +237,7 @@ useEffect(()=>{
             <Col lg="6" md="6">
               <div className="testimonial mb-4">
                 <h5 className="testimonial-subtitle mb-4">Testimonial</h5>
-                <h2 className="testimonial-title mb-4">What our <span>customers</span> are saying</h2>
+                <h2 className="testimonial-title mb-4">Was sagen <span>unsere Kunden</span> über uns</h2>
                 <p className='testimonial-desc'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad deserunt harum similique nemo numquam maiores ratione beatae repellendus suscipit quisquam?</p>
                 <TestimonialSlider/>
               </div>

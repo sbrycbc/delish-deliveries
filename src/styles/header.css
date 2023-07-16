@@ -3,7 +3,7 @@
     height: 100px;
     line-height: 100px;
 }
-.header__shrink {
+.header_shrink {
     position: sticky;
     top: 0;
     left: 0;
