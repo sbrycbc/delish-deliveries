@@ -145,7 +145,7 @@ useEffect(()=>{
             <h2 className="text-center">Popular Foods</h2>
           </Col>
           <Col lg='12'>
-            <div className="food_category d-flex align-items-center justify-content-center gap-5">
+            <div className="food_category d-flex align-items-center justify-content-center gap-3">
               <button className={`all_btn ${category === 'ALL' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("ALL")}>Alles</button>
               <button className={`d-flex align-items-center gap-2 ${category === 'BURGER' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("BURGER")}><img src={foodCategoryImg01} alt="category_1"/>Burger</button>
               <button className={`d-flex align-items-center gap-2 ${category === 'PIZZA' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("PIZZA")}><img src={foodCategoryImg02} alt="category_2"/>Pizza</button>
@@ -159,7 +159,7 @@ useEffect(()=>{
 
             {
               allProducts.map(item=> (
-                <Col lg='3' md='4' sm="6" xs="6" key={item.id} className='mt-5 '>
+                <Col lg='3' md='4' sm="12" xs="12" key={item.id} className='mt-5 '>
                   <ProductCard item={item}/>
                 </Col>
               ))

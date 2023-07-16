@@ -178,4 +178,19 @@
     .why-tasty-treat {
         margin-top:1rem;
     }
+
+    .food_category {
+        flex-direction:column !important;
+        background: white;
+        gap:5px !important;
+    }
+    .food_category button {
+        background:#099e9d;
+        width:300px;
+    }
+    .foodBtnActive {
+        background:#861b47 !important;
+        border-radius: 5px;
+        color:#fff !important;
+    }
 }

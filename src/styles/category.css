@@ -23,3 +23,19 @@
         font-size: 0.8rem;
     }
 }
+
+
+@media only screen and (max-width: 576px){
+
+    .category_item{
+        padding:8px 3px;
+    }
+    .category_img img{
+        width: 30px;
+        height: 40px;
+    }
+
+    .category_item h6 {
+        font-size: 0.7rem;
+    }
+}
