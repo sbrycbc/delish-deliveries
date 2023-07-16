@@ -4,9 +4,13 @@ import paprika from '../assets/images/paprika.png';
 
 import { Container, Row, Col } from 'reactstrap';
 
+import UnsereTeamSlider from '../components/Ul/slider/UnsereTeamSlider';
+
+
 
 
 const ÜberUns = () => {
+
   return (
     <Helmet title= "ÜberUns">
       
@@ -35,6 +39,19 @@ const ÜberUns = () => {
               <h4>Das Unternehmen</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed corporis excepturi doloremque! Porro impedit pariatur nostrum quod architecto aliquid, sed odit voluptate neque facere accusantium vero error consectetur rerum, voluptatibus incidunt, molestias repellendus blanditiis minus nam aspernatur! Eos cumque odit esse vel quia illo qui sit at, omnis et consequatur!</p>
               </Col>
+            </Row>
+          </Container>
+        </section>
+        <section>
+          <Container>
+            <Row>
+            <Col lg='12' className='text-center'>
+              <h4>Unsere Team</h4>
+              </Col>
+              <Col lg='12' className='text-center'>
+                <UnsereTeamSlider/>
+              </Col>
+
             </Row>
           </Container>
         </section>

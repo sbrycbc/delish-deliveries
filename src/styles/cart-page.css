@@ -26,14 +26,14 @@ th {
   }
   
   .cart_subtotal {
-    color: #df2020;
+    color: #099e9d;
     font-size: 1.5rem;
   }
   
   .addToCart_btn {
     border: none;
     padding: 7px 25px;
-    background: #df2020;
+    background: #861b47;
     color: #fff;
     border-radius: 5px;
     font-size: 0.9rem;

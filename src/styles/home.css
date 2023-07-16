@@ -1,8 +1,8 @@
 .feature_subtitle{
-    color: aqua;
+    color: #099e9d;
 }
 .feature_title span{
-    color: aqua;
+    color: #099e9d;
 }
 .feature_text{
     color: #777;
@@ -12,7 +12,7 @@
 }
 
 .food_category {
-    background:aqua;
+    background:#099e9d;
     text-align:center;
     margin-top:30px;
     padding:20px 0px;
@@ -35,11 +35,11 @@
 .foodBtnActive {
     background:#fff !important;
     border-radius: 5px;
-    color:aqua !important;
+    color:#861b47 !important;
 }
 
 .tasty-treat-title span{
-    color:aqua;
+    color:#099e9d;
 
 }
 
@@ -63,11 +63,11 @@
 }
 
 .testimonial-subtitle {
-    color:aqua;
+    color:#099e9d;
 }
 
 .testimonial-title span{
-    color:aqua;
+    color:#099e9d;
 }
 .testimonial-desc{
     color: #777;

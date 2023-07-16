@@ -1,12 +1,19 @@
 .hero_content{
   padding-top: 70px;
 }
+.hero_content h5{
+
+  font-size: 1.7rem;
+
+}
+
 .hero_title {
   font-size: 2rem;
   line-height:55px;
+  color:#861b47;
 }
 .hero_title span { 
-  color: aqua;
+  color: #099e9d;
 }
 .hero_content p {
   font-size: 1rem;
@@ -22,7 +29,7 @@
   font-size: 600;
 }
 .bestellt_btn{
-  background: aqua;
+  background: #861b47;
   color: #fff; 
 
 }
@@ -31,10 +38,10 @@
 }
 .all_foods_btn{
    background: transparent;
-   border:1px solid aqua !important;
+   border:1px solid #861b47 !important;
 }
 .all_foods_btn a{
-   color: aqua;
+   color: #099e9d;
 }
 .hero_service p {
    color: #212245;
@@ -43,7 +50,7 @@
 }
 .versand_icon i{
    padding: 5px;
-   background:aqua;
+   background:#861b47;
    color: #fff;
    border-radius: 50%;
    font-weight: 50% !important;

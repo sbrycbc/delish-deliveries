@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Helmet from '../components/Helmet/Helmet.js'
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
 
-import paprika from '../assets/images/paprika.png';
+import lieferung from '../assets/images/lieferung.jpg';
 import whyUns from '../assets/images/why-uns.png';
 
 import '../styles/hero-section.css';
@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 import Category from '../components/Ul/category/Category.jsx';
 import '../styles/home.css';
 
-import featureImg01 from '../assets/images/paprika.png';
+import featureImg01 from '../assets/images/lieferung.jpg';
 import featureImg02 from '../assets/images/paprika.png';
 import featureImg03 from '../assets/images/paprika.png';
 
@@ -99,7 +99,7 @@ useEffect(()=>{
 
         <Col lg='6' md='6'>
           <div className='hero_img'>
-          <img src={paprika}  alt='paprika' className='w-100'/>
+          <img src={lieferung}  alt='lieferung' className='w-100'/>
           </div>
         </Col>
         </Row>

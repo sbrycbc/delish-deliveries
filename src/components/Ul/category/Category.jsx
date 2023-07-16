@@ -1,21 +1,22 @@
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import categoryImg01 from '../../../assets/images/paprika.png';
-import categoryImg02 from '../../../assets/images/paprika.png';
-import categoryImg03 from '../../../assets/images/paprika.png';
-import categoryImg04 from '../../../assets/images/paprika.png';
+import categoryImg01 from '../../../assets/images/product_2.1.jpg';
+import categoryImg02 from '../../../assets/images/product_01.3.jpg';
+import categoryImg03 from '../../../assets/images/döner-01.jpg';
+import categoryImg04 from '../../../assets/images/bread.png';
+
 
 
 import '../../../styles/category.css';
 
 const categoryData = [
     {
-        display:'Fastfood',
+        display:'Pizza',
         imgUrl: categoryImg01
     },
     {
-        display:'Pizza',
+        display:'Burger',
         imgUrl: categoryImg02
     },
     {
@@ -23,7 +24,7 @@ const categoryData = [
         imgUrl: categoryImg03
     },
     {
-        display:'Köfte',
+        display:'Brot',
         imgUrl: categoryImg04
     },
 ]
@@ -37,7 +38,7 @@ const Category = () => {
         <Col lg='3' md='4' sm='6' xs='6' className='mb-4' key={index}>
             <div className="category_item d-flex align-items-center gap-3 mb-4 mt-3">
                 <div className="category_img" >
-                    <img style={{width:'8rem'}} src={item.imgUrl} alt='category_item' />
+                    <img style={{width:'5rem'}} src={item.imgUrl} alt='category_item' />
                 </div>
                 <h6>{item.display}</h6>
 

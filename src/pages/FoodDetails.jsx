@@ -56,7 +56,7 @@ const FoodDetails = () => {
   }, [product])
 
   
-
+console.log(enteredName, enteredEmail,enteredReview)
 
   return <Helmet title="Product-details">
     <CommonSection title={title}/>
