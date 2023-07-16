@@ -9,6 +9,8 @@ import Checkout from '../pages/Checkout';
 import Login from '../pages/Login';
 import Contact from '../pages/Contact';
 import Register from '../pages/Register';
+import Payment from '../pages/Payment';
+
 
 
 const Routers = () => {
@@ -23,6 +25,7 @@ const Routers = () => {
     <Route path='/login' element={ <Login/> } />
     <Route path='/contact' element={ <Contact/> } />
     <Route path='/register' element={ <Register/> } />
+    <Route path='/payment' element={ <Payment/> } />
    </Routes>
   );
 };

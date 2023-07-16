@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
+import {Link} from "react-router-dom"
 import {Container, Row, Col} from "reactstrap"
 import CommonSection from '../components/Ul/common-section/CommonSection';
 import Helmet from '../components/Helmet/Helmet';
+
+// import Payment from "../components/Payment/Payment"
 
 import "../styles/checkout.css"
  
@@ -65,9 +68,10 @@ const Checkout = () => {
               <div className="form_group">
                 <input type="number" placeholder="Postleitzahl" required onChange={e=> setPostalCode(e.target.value)}/>
               </div>
+              <Link to="/payment">
               <button type="submit" className="addToCart_btn">
                 Payment
-              </button>
+              </button></Link>
 
             </form>
 
