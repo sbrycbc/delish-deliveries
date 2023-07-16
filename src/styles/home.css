@@ -62,6 +62,19 @@
     color:#777;
 }
 
+.hero_img img{
+    margin-left:6rem;
+    width:450px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.why_uns-img {
+    width:420px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
 .testimonial-subtitle {
     color:#099e9d;
 }

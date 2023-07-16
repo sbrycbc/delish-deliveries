@@ -70,7 +70,7 @@ const Header = () => {
           <div className="menu d-flex align-items-center gap-5">
             {
               nav_links.map((item,index)=>(
-                <NavLink   to={item.path} key={index} 
+                <NavLink to={item.path} key={index} 
                   className={navClass => navClass.isActive ? 'active_menu' : ' '}>
                   {item.display}
                 </NavLink>

@@ -126,6 +126,7 @@ console.log(enteredName, enteredEmail,enteredReview)
                   <button type="submit" className='addToCard_btn'>Submit</button>
                 </form>
               </div>
+                
               }
 
 

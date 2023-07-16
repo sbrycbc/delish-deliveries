@@ -3,7 +3,8 @@ import Helmet from '../components/Helmet/Helmet.js'
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
 
 import lieferung from '../assets/images/lieferung.jpg';
-import whyUns from '../assets/images/why-uns.png';
+import whyUns from '../assets/images/why-uns2.jpg';
+import testimonial from '../assets/images/why-uns.png';
 
 import '../styles/hero-section.css';
 import { Link } from 'react-router-dom';
@@ -12,14 +13,16 @@ import Category from '../components/Ul/category/Category.jsx';
 import '../styles/home.css';
 
 import featureImg01 from '../assets/images/lieferung.jpg';
-import featureImg02 from '../assets/images/paprika.png';
+import featureImg02 from '../assets/images/döner-05.jpg';
 import featureImg03 from '../assets/images/paprika.png';
 
 import products from '../assets/data/products.js';
 
-import foodCategoryImg01 from '../assets/images/paprika.png';
-import foodCategoryImg02 from '../assets/images/paprika.png';
-import foodCategoryImg03 from '../assets/images/paprika.png';
+import foodCategoryImg01 from '../assets/images/product_01.3.jpg';
+import foodCategoryImg02 from '../assets/images/product_2.1.jpg';
+import foodCategoryImg03 from '../assets/images/bread(2).png';
+import foodCategoryImg04 from '../assets/images/döner-02.jpg';
+
 
 import ProductCard from '../components/Ul/product-card/ProductCard.jsx';
 
@@ -27,17 +30,17 @@ import TestimonialSlider from '../components/Ul/slider/TestimonialSlider.jsx';
 
 const featureData = [
   {
-      title:'Quick Delivery',
+      title:'Schnelle Lieferung',
       imgUrl: featureImg01,
       desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, laboriosam.'
   },
   {
-      title:'Siper Dine In',
+      title:'Für jeden etwas dabei!',
       imgUrl: featureImg02,
       desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, laboriosam.'
   },
   {
-      title:'Easy Pick Up',
+      title:'Einfach Selbst Abholen',
       imgUrl: featureImg03,
       desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, laboriosam'
   },
@@ -71,6 +74,10 @@ useEffect(()=>{
     const filteredProducts = products.filter(item=> item.category === "Bread")
     setAllProducts(filteredProducts)
   }
+  if (category === "DONER") {
+    const filteredProducts = products.filter(item=> item.category === "Döner")
+    setAllProducts(filteredProducts)
+  }
 },[category])
 
   return <Helmet title='Home'>
@@ -79,7 +86,7 @@ useEffect(()=>{
         <Row>
         <Col lg='6' md='6'>
           <div className='hero_content'>
-            <h5 className='mb-3 mt-4'>Einfache Bestellung und Schnelle Lieferung</h5>
+            <h5 className='mb-3'>Einfache Bestellung und Schnelle Lieferung</h5>
             <h1 className='mb-4 hero_title'><span>Bist Du Hunger???</span> <br /> Kommm einfach!!!<span> an deiner Tür!!!</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisicing elit</p>
             <div className='hero_btns d-flex align-items-center gap-5 mt-3'>
@@ -97,9 +104,9 @@ useEffect(()=>{
           </div>
         </Col>
 
-        <Col lg='6' md='6'>
-          <div className='hero_img'>
-          <img src={lieferung}  alt='lieferung' className='w-100'/>
+        <Col lg='6' md='6' >
+          <div className='hero_img d-flex justify-content-end'>
+          <img src={lieferung}  alt='lieferung'/>
           </div>
         </Col>
         </Row>
@@ -143,6 +150,7 @@ useEffect(()=>{
               <button className={`d-flex align-items-center gap-2 ${category === 'BURGER' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("BURGER")}><img src={foodCategoryImg01} alt="category_1"/>Burger</button>
               <button className={`d-flex align-items-center gap-2 ${category === 'PIZZA' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("PIZZA")}><img src={foodCategoryImg02} alt="category_2"/>Pizza</button>
               <button className={`d-flex align-items-center gap-2 ${category === 'BREAD' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("BREAD")}><img src={foodCategoryImg03} alt="category_3"/>Bread</button>
+              <button className={`d-flex align-items-center gap-2 ${category === 'DONER' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("DONER")}><img src={foodCategoryImg04} alt="category_4"/>Döner</button>
 
             </div>
 
@@ -165,7 +173,7 @@ useEffect(()=>{
       <Container>
         <Row>
           <Col lg="6" md="6">
-            <img src={whyUns} alt="why-uns" className='w-100'/>
+            <img src={whyUns} alt="why-uns" className='why_uns-img'/>
           </Col>
           <Col lg="6" md="6">
             <div className="why-tasty-treat">
@@ -224,7 +232,7 @@ useEffect(()=>{
               </div>
             </Col>
             <Col lg="6" md="6" >
-              <img src={whyUns} alt="Image77" className="w-100 mt-3"/>
+              <img src={testimonial} alt="Image77" className="w-100 mt-3"/>
             </Col>
         </Row>
       </Container>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
-import logo from '../../assets/images/sbry.png';
+import logo from '../../assets/images/logo-footer.png';
 
 import '../../styles/footer.css';
 import { Link } from 'react-router-dom';
@@ -11,8 +11,8 @@ const Footer = () => {
       <Row>
         <Col lg='3' md='4' sm='6'>
           <div className="logo footer__logo text-start">
-            <img src={logo}  alt=' logo' />
-            <h5>DelishDeliveries</h5>
+            <img src={logo}  alt=' logo' className="mb-3 pt-4"/>
+
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ipsum iusto vel cum.</p>
           </div>
         </Col>
@@ -27,7 +27,7 @@ const Footer = () => {
 
             <ListGroupItem className='delivery__time-item border-0 ps-0'>
               <span>Freitag - Montag</span>
-              <p>OFF Tage</p>
+              <p>Keine Lieferung</p>
             </ListGroupItem>
           </ListGroup>
         </Col>

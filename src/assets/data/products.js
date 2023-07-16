@@ -23,11 +23,19 @@ import product_06_image_01 from "../images/bread(1).png";
 import product_06_image_02 from "../images/bread(2).png";
 import product_06_image_03 from "../images/bread(3).png";
 
+import doner_01 from "../images/döner-01.jpg";
+import doner_02 from "../images/döner-02.jpg";
+import doner_03 from "../images/döner-03.jpg";
+
+import doner_04 from "../images/döner-04.jpg";
+import doner_05 from "../images/döner-05.jpg";
+import doner_06 from "../images/chicken-04.jpg";
+
 const products = [
   {
     id: "01",
     title: "Chicken Burger",
-    price: 24.0,
+    price: 6.99,
     image01: product_01_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
@@ -39,7 +47,7 @@ const products = [
   {
     id: "02",
     title: "Vegetarian Pizza",
-    price: 115.0,
+    price: 9.99,
     image01: product_02_image_01,
     image02: product_02_image_02,
     image03: product_02_image_03,
@@ -51,7 +59,7 @@ const products = [
   {
     id: "03",
     title: "Double Cheese Margherita",
-    price: 110.0,
+    price: 11.99,
     image01: product_03_image_01,
     image02: product_03_image_02,
     image03: product_03_image_03,
@@ -63,7 +71,7 @@ const products = [
   {
     id: "04",
     title: "Maxican Green Wave",
-    price: 110.0,
+    price: 12.99,
     image01: product_04_image_01,
     image02: product_04_image_02,
     image03: product_04_image_03,
@@ -75,7 +83,7 @@ const products = [
   {
     id: "05",
     title: "Cheese Burger",
-    price: 24.0,
+    price: 6.0,
     image01: product_05_image_01,
     image02: product_05_image_02,
     image03: product_05_image_03,
@@ -86,7 +94,7 @@ const products = [
   {
     id: "06",
     title: "Royal Cheese Burger",
-    price: 24.0,
+    price: 7.99,
     image01: product_01_image_01,
     image02: product_01_image_02,
     image03: product_01_image_03,
@@ -98,7 +106,7 @@ const products = [
   {
     id: "07",
     title: "Seafood Pizza",
-    price: 115.0,
+    price: 11.99,
     image01: product_02_image_02,
     image02: product_02_image_01,
     image03: product_02_image_03,
@@ -110,7 +118,7 @@ const products = [
   {
     id: "08",
     title: "Thin Cheese Pizza",
-    price: 110.0,
+    price: 13.99,
     image01: product_03_image_02,
     image02: product_03_image_01,
     image03: product_03_image_03,
@@ -122,7 +130,7 @@ const products = [
   {
     id: "09",
     title: "Pizza With Mushroom",
-    price: 110.0,
+    price: 10.99,
     image01: product_04_image_02,
     image02: product_04_image_01,
     image03: product_04_image_03,
@@ -134,7 +142,7 @@ const products = [
   {
     id: "10",
     title: "Classic Hamburger",
-    price: 24.0,
+    price: 7.99,
     image01: product_05_image_02,
     image02: product_05_image_01,
     image03: product_05_image_03,
@@ -146,7 +154,7 @@ const products = [
   {
     id: "11",
     title: "Crunchy Bread ",
-    price: 35.0,
+    price: 4.00,
     image01: product_06_image_01,
     image02: product_06_image_02,
     image03: product_06_image_03,
@@ -158,11 +166,33 @@ const products = [
   {
     id: "13",
     title: "Loaf Bread ",
-    price: 35.0,
+    price: 4.00,
     image01: product_06_image_03,
     image02: product_06_image_02,
     image03: product_06_image_01,
     category: "Bread",
+
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+  },
+  {
+    id: "14",
+    title: "Döner Dürüm",
+    price: 8.0,
+    image01: doner_01,
+    image02: doner_02,
+    image03: doner_03,
+    category: "Döner",
+
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
+  },
+  {
+    id: "15",
+    title: "Döner Tasche",
+    price: 7.0,
+    image01: doner_04,
+    image02: doner_05,
+    image03: doner_06,
+    category: "Döner",
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
   },

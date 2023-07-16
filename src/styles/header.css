@@ -27,7 +27,6 @@
 .logo h5{
     font-weight: 600;
     font-size: 1rem;
-    color: aqua;
     margin-top: -40px;
     margin-bottom: 0;
 }
@@ -41,11 +40,11 @@
 }
 
 .menu a:hover{
-    color: aqua;
+    color: #099e9d;
 }
 
 .active_menu{
-    color: aqua;
+    color: #099e9d;
 }
 
 .cart_icon i,
