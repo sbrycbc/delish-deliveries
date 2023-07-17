@@ -3,7 +3,7 @@ const users = [
     id: "01",
     name: "John Doe",
     email: "jhon01@gmail.com",
-    password:"sder34jkjk45+-",
+    password:"123456",
     shippingAdress:{
             name: "John Doe",
             email: "jhon01@gmail.com",
@@ -16,12 +16,12 @@ const users = [
 
   {
     id: "02",
-    name: "John Doe",
-    email: "jhon01@gmail.com",
-    password:"sder34jkjk45+-",
+    name: "Lisa L",
+    email: "lisal@gmail.com",
+    password:"123456",
     shippingAdress:{
-            name: "John Doe",
-            email: "jhon01@gmail.com",
+            name: "Lisa L",
+            email: "lisal@gmail.com",
             phone: 12565328, 
             country: "Deutschland",
             city: "Köln",
