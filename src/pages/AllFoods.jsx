@@ -26,6 +26,8 @@ const AllFoods = () => {
     }
   });
 
+
+
   const productPerPage = 8;
   const visitedPage = pageNumber * productPerPage;
   const displayPage = searchedProduct.slice(
@@ -33,11 +35,27 @@ const AllFoods = () => {
     visitedPage + productPerPage
   );
 
+  // const sortProducts = (e) => {
+  //   const sortBy = e.target.value
+  //   if (sortBy==="ascending") {
+  //     displayPage.sort((a, b) => a.title.localeCompare(b.title));
+  //   } else if (sortBy==="descending") {
+  //     displayPage.sort((a, b) => b.title.localeCompare(a.title));
+  //   } else if (sortBy === "high-price") {
+  //     displayPage.sort((a,b)=>a.price-b.price);
+  //   } else if(sortBy==="low-price") {
+  //     displayPage.sort((a,b)=>b.price-a.price);
+  //   }
+
+  // }
+
   const pageCount = Math.ceil(searchedProduct.length / productPerPage);
 
   const changePage = ({ selected }) => {
     setPageNumber(selected);
   };
+
+  
 
   return (
     <Helmet title="All-Foods">
