@@ -53,7 +53,7 @@ const Home = () => {
 
   const [hotPizza, setHotPizza] = useState([]);
 
-  const randomZahl = Math.floor(Math.random() * 40) + 1;
+  const randomZahl = Math.floor(Math.random() * 40);
   const randomText = zitate[randomZahl];
 
   useEffect(() => {
