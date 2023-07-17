@@ -3,19 +3,19 @@ import products from '../assets/data/products';
 
 import { useParams } from 'react-router-dom';
 import Helmet from '../components/Helmet/Helmet';
-import CommonSection from '../components/Ul/common-section/CommonSection';
+import CommonSection from '../components/UI/common-section/CommonSection';
 
 import {Container, Row, Col} from "reactstrap"
 
 import { useDispatch } from 'react-redux';
 import { cartActions } from '../store/shopping-cart/cartSlice';
 
-import TestimonialSlider from '../components/Ul/slider/TestimonialSlider.jsx';
+import TestimonialSlider from '../components/UI/slider/TestimonialSlider.jsx';
 
 
 import "../styles/product-details.css"
 
-import ProductCard from '../components/Ul/product-card/ProductCard';
+import ProductCard from '../components/UI/product-card/ProductCard';
 
 const FoodDetails = () => {
 

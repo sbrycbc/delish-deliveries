@@ -27,15 +27,14 @@ const Carts = () => {
             cartProducts.length === 0 ? <h6 className='text-center mt-5 '>No 
             item added to the cart</h6> : cartProducts.map((item, index)=>(
             <CartItem item={item} key={index}/>
-
             ))
           }
 
         </div>
         <div className="cart_bottom  d-flex align-items-center justify-content-between">
-            <h6>Subtotal : <span>€{totalAmount}</span></h6>
+            <h6>Summe : <span>€{totalAmount}</span></h6>
             <button>
-                <Link to="/checkout" className="cart_checkout">Checkout</Link>
+                <Link to="/checkout" className="cart_checkout">Zur Kasse</Link>
             </button>
         </div>
 

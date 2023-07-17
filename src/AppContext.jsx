@@ -1,8 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 import axios from "axios";
 
-import zitate from "./assets/data/zitate"
-
 export const AppContext = createContext();
 
 
@@ -27,7 +25,6 @@ export const AppProvider = ({ children }) => {
         value={{
           isLoading,
           loadedEmployees,
-          zitate
         }}
       >
         {children}

@@ -58,7 +58,7 @@ const products = [
 
   {
     id: "03",
-    title: "Double Cheese Margherita Pizza",
+    title: "Cheese Margherita",
     price: 11.0,
     image01: product_03_image_01,
     image02: product_03_image_02,
@@ -70,7 +70,7 @@ const products = [
 
   {
     id: "04",
-    title: "Maxican Green Wave Pizza",
+    title: "Maxican Pizza",
     price: 12.0,
     image01: product_04_image_01,
     image02: product_04_image_02,
@@ -117,7 +117,7 @@ const products = [
 
   {
     id: "08",
-    title: "Thin Cheese Pizza",
+    title: "Thin Pizza",
     price: 14.0,
     image01: product_03_image_02,
     image02: product_03_image_01,
@@ -129,7 +129,7 @@ const products = [
 
   {
     id: "09",
-    title: "With Mushroom Pizza",
+    title: "Mushroom Pizza",
     price: 10.0,
     image01: product_04_image_02,
     image02: product_04_image_01,

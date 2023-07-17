@@ -6,7 +6,7 @@ import "../styles/uberuns.css";
 
 import { Container, Row, Col } from 'reactstrap';
 
-import UnsereTeamSlider from '../components/Ul/slider/UnsereTeamSlider';
+import UnsereTeamSlider from '../components/UI/slider/UnsereTeamSlider';
 
 
 

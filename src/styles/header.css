@@ -10,9 +10,7 @@
     background: #fff;
     z-index: 99999;
     box-shadow: 5px 5px 15px -5px #d7d6d6;
-    /* animation-name: animation;
-    animation-duration: 0.5s; */
-  }
+}
 
 .logo{
     text-align: center;

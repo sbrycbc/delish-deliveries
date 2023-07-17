@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CommonSection from "../components/Ul/common-section/CommonSection"
+import CommonSection from "../components/UI/common-section/CommonSection"
 import Helmet from "../components/Helmet/Helmet"
 import "../styles/cart-page.css"
 
@@ -48,16 +48,16 @@ const Cart = () => {
               }
 
               <div className="mt-4">
-                <h6>Subtotal: €<span className='cart_subtotal'>{totalAmount}</span></h6>
-                <p>Alle Preise in € inkl. gestzl MwSt.</p>
-                <p>Ab 20 € versandkostenfrei bestellen</p>
+                <h6>Summe: €<span className='cart_subtotal'>{totalAmount}</span></h6>
+                <p className='card_page-info'>Alle Preise in € inkl. gestzl MwSt.
+                <br />Ab 20 € versandkostenfrei bestellen</p>
                 <div className="cart_page-btn">
                   <button className="addToCart_btn me-4">
                     <Link to="/foods">Weiter einkaufen</Link>
 
                   </button>
                   <button className="addToCart_btn">
-                    <Link to="/checkout">Checkout</Link>
+                    <Link to="/checkout">Zur Kasse</Link>
 
                   </button>
                 </div>

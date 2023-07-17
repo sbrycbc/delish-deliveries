@@ -14,10 +14,14 @@ th {
     cursor: pointer;
   }
   
+  .card_page-info{
+    color: #777;
+    font-size: 0.7rem; 
+  }
   .cart_page-btn {
     display: flex;
     flex-wrap: nowrap;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
   }
   
   .cart_page-btn button a:hover {

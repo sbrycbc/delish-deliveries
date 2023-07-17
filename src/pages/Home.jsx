@@ -9,7 +9,7 @@ import testimonial from '../assets/images/why-uns.png';
 import '../styles/hero-section.css';
 import { Link } from 'react-router-dom';
 
-import Category from '../components/Ul/category/Category.jsx';
+import Category from '../components/UI/category/Category.jsx';
 import '../styles/home.css';
 
 import featureImg01 from '../assets/images/lieferung.jpg';
@@ -24,9 +24,9 @@ import foodCategoryImg03 from '../assets/images/bread-01.png';
 import foodCategoryImg04 from '../assets/images/döner-02.jpg';
 
 
-import ProductCard from '../components/Ul/product-card/ProductCard.jsx';
+import ProductCard from '../components/UI/product-card/ProductCard.jsx';
 
-import TestimonialSlider from '../components/Ul/slider/TestimonialSlider.jsx';
+import TestimonialSlider from '../components/UI/slider/TestimonialSlider.jsx';
 
 import zitate from '../assets/data/zitate.js';
 
@@ -87,10 +87,6 @@ useEffect(()=>{
   }
 },[category])
 
-
-
-
-
   return <Helmet title='Home'>
     <section>
       <Container>
@@ -104,7 +100,6 @@ useEffect(()=>{
               <button className='bestellt_btn d-flex align-items-center justify-content-between'> 
               <Link to='/cart'>Jetzt Bestellen <i className="ri-arrow-right-s-fill"></i>
               </Link></button>
-
               <button className='all_foods_btn'>
                 <Link to='/foods'>Sehen alle</Link></button>
             </div>
@@ -135,7 +130,7 @@ useEffect(()=>{
       <Container>
         <Row>
           <Col lg='12' className='text-center'>
-            <h5 className='feature_subtitle mb-4'>Was wir servieren</h5>
+            <h5 className='feature_subtitle mb-5 mt-2'>Was wir servieren</h5>
             <h2 className='feature_title'>Lehnen Sie sich einfach zu Hause zurück</h2>
             <h2 className='feature_title'>wir werden <span>das kümmern</span></h2>
             <p className='mb-1 mt-4 feature_text'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, earum!</p>
@@ -153,8 +148,7 @@ useEffect(()=>{
               </Col>
             ))
           }
-        </Row>
-  
+        </Row>  
         <Row>
           <Col lg='12'>
             <h2 className="text-center">Popular Foods</h2>
@@ -164,12 +158,9 @@ useEffect(()=>{
               <button className={`all_btn ${category === 'ALL' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("ALL")}>Alles</button>
               <button className={`d-flex align-items-center gap-2 ${category === 'BURGER' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("BURGER")}><img src={foodCategoryImg01} alt="category_1"/>Burger</button>
               <button className={`d-flex align-items-center gap-2 ${category === 'PIZZA' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("PIZZA")}><img src={foodCategoryImg02} alt="category_2"/>Pizza</button>
-              <button className={`d-flex align-items-center gap-2 ${category === 'BREAD' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("BREAD")}><img src={foodCategoryImg03} alt="category_3"/>Bread</button>
+              <button className={`d-flex align-items-center gap-2 ${category === 'BREAD' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("BREAD")}><img src={foodCategoryImg03} alt="category_3"/>Brot</button>
               <button className={`d-flex align-items-center gap-2 ${category === 'DONER' ? 'foodBtnActive' : ''}`} onClick={()=> setCategory("DONER")}><img src={foodCategoryImg04} alt="category_4"/>Döner</button>
-
             </div>
-
-
           </Col>
 
             {
@@ -179,7 +170,6 @@ useEffect(()=>{
                 </Col>
               ))
             }
-
 
         </Row>
       </Container>

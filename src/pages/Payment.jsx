@@ -1,6 +1,6 @@
 import React from 'react';
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js';
-import CommonSection from '../components/Ul/common-section/CommonSection';
+import CommonSection from '../components/UI/common-section/CommonSection';
 import Helmet from '../components/Helmet/Helmet';
 
 const Payment = () => {
