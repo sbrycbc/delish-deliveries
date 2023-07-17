@@ -58,7 +58,7 @@ const products = [
 
   {
     id: "03",
-    title: "Double Cheese Margherita",
+    title: "Double Cheese Margherita Pizza",
     price: 11.0,
     image01: product_03_image_01,
     image02: product_03_image_02,
@@ -70,7 +70,7 @@ const products = [
 
   {
     id: "04",
-    title: "Maxican Green Wave",
+    title: "Maxican Green Wave Pizza",
     price: 12.0,
     image01: product_04_image_01,
     image02: product_04_image_02,
@@ -129,7 +129,7 @@ const products = [
 
   {
     id: "09",
-    title: "Pizza With Mushroom",
+    title: "With Mushroom Pizza",
     price: 10.0,
     image01: product_04_image_02,
     image02: product_04_image_01,
@@ -176,7 +176,7 @@ const products = [
   },
   {
     id: "14",
-    title: "Döner Dürüm",
+    title: "Dürüm Döner ",
     price: 8.0,
     image01: doner_01,
     image02: doner_02,
@@ -187,7 +187,7 @@ const products = [
   },
   {
     id: "15",
-    title: "Döner Tasche",
+    title: "Tasche Döner ",
     price: 7.0,
     image01: doner_04,
     image02: doner_05,
