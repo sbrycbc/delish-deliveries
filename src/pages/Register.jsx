@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import {Container, Row, Col} from "reactstrap"
+import { Container, Row, Col } from "reactstrap"
 import CommonSection from '../components/UI/common-section/CommonSection';
 import Helmet from '../components/Helmet/Helmet';
 import { Link } from 'react-router-dom';

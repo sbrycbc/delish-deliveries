@@ -4,7 +4,6 @@ import axios from "axios";
 export const AppContext = createContext();
 
 
-
 const url = "https://apis-for-beginner.bscebeci.de/api/employees";
 
 export const AppProvider = ({ children }) => {
@@ -25,10 +24,9 @@ export const AppProvider = ({ children }) => {
         value={{
           isLoading,
           loadedEmployees,
-        }}
-      >
+        }} >
         {children}
       </AppContext.Provider>
     );
-  };
+};
 

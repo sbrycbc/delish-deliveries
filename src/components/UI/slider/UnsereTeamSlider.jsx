@@ -14,7 +14,7 @@ import { useContext } from "react";
 import { AppContext } from "../../../AppContext";
 
 const UnsereTeamSlider = () => {
-    const { loadedEmployees} =
+    const {loadedEmployees} =
     useContext(AppContext);
     let imagePath;
     const settings = {
@@ -62,4 +62,4 @@ const UnsereTeamSlider = () => {
   )
 }
 
-export default UnsereTeamSlider
+export default UnsereTeamSlider;

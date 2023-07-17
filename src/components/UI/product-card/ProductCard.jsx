@@ -16,7 +16,7 @@ const ProductCard = (props) => {
           image01,
           price
         }));
-    };
+};
 
 
   return (

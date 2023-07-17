@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import {Link} from "react-router-dom"
-import {Container, Row, Col} from "reactstrap"
+import { Link } from "react-router-dom"
+import { Container, Row, Col } from "reactstrap"
 import CommonSection from '../components/UI/common-section/CommonSection';
 import Helmet from '../components/Helmet/Helmet';
 
-// import Payment from "../components/Payment/Payment"
 
-import "../styles/checkout.css"
+import "../styles/checkout.css";
  
 const Checkout = () => {
 

@@ -45,8 +45,7 @@ const Category = () => {
             </div>
         </Col>
         ))
-    }   
-        
+    }       
     </Row>
   </Container>
   

@@ -46,6 +46,7 @@ In diesem Projekt wurden folgende React Hooks verwendet:
 - useContext
 - useRef
 - useDispatch
+- useSelector
 
 
 

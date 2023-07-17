@@ -12,7 +12,6 @@ const Footer = () => {
         <Col lg='3' md='4' sm='6'>
           <div className="logo footer__logo text-start">
             <img src={logo}  alt=' logo' className="mb-3 pt-4"/>
-
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit ipsum iusto vel cum.</p>
           </div>
         </Col>

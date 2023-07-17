@@ -12,8 +12,8 @@ const users = [
             city: "Köln",
             postalCode:45234,
           },
-
   },
+
   {
     id: "02",
     name: "John Doe",

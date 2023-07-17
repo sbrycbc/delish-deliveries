@@ -1,7 +1,8 @@
 const zitate = [
-    "„Der Weg zur Gesundheit führt durch die Küche, nicht durch die Apotheke.“ (Sebastian Kneipp)",
-    "„Tiere sind meine Freunde, und ich esse meine Freunde nicht.“ (George Bernard Shaw)",
-    "„Man soll dem Leib etwas Gutes bieten, damit die Seele Lust hat, darin zu wohnen.“ (Winston Churchill)",
+    
+"„Der Weg zur Gesundheit führt durch die Küche, nicht durch die Apotheke.“ (Sebastian Kneipp)",
+"„Tiere sind meine Freunde, und ich esse meine Freunde nicht.“ (George Bernard Shaw)",
+"„Man soll dem Leib etwas Gutes bieten, damit die Seele Lust hat, darin zu wohnen.“ (Winston Churchill)",
 "„Wenn wir jedem Individuum das richtige Maß an Nahrung und Bewegung zukommen lassen könnten, hätten wir den sichersten Weg zur Gesundheit gefunden.“ (Hippokrates)",
 "„Eine gute Küche ist das Fundament allen Glücks.“ (Auguste Escoffier)",
 "„Mit leeren Mägen und menschlichem Elend kann man keine friedliche Welt aufbauen.“ (Norman Ernest Borlaug)",

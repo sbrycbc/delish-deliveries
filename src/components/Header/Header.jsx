@@ -18,7 +18,7 @@ const nav_links = [
     path: '/foods'
   },
   {
-    display: 'Kart',
+    display: 'Warenkorb',
     path: '/cart'
   },
   {
@@ -57,7 +57,6 @@ const Header = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-//ref={headerRef}
   return (
     <header className="header" ref={headerRef}>
       <Container>

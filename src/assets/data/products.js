@@ -21,7 +21,7 @@ import product_05_image_03 from "../images/product_09.jpg";
 
 import product_06_image_01 from "../images/bread(1).png";
 import product_06_image_02 from "../images/bread(2).png";
-import product_06_image_03 from "../images/bread(3).png";
+import product_06_image_03 from "../images/bread-01.png";
 
 import doner_01 from "../images/döner-01.jpg";
 import doner_02 from "../images/döner-02.jpg";
@@ -91,6 +91,7 @@ const products = [
 
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
   },
+
   {
     id: "06",
     title: "Royal Cheese Burger",
@@ -153,7 +154,7 @@ const products = [
 
   {
     id: "11",
-    title: "Crunchy Bread ",
+    title: "Crunchy Brot",
     price: 4.0,
     image01: product_06_image_01,
     image02: product_06_image_02,
@@ -165,7 +166,7 @@ const products = [
 
   {
     id: "13",
-    title: "Loaf Bread ",
+    title: "Loaf Brot",
     price: 4.0,
     image01: product_06_image_03,
     image02: product_06_image_02,
@@ -197,5 +198,9 @@ const products = [
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque.",
   },
 ];
+
+
+
+
 
 export default products;
