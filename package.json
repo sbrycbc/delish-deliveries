@@ -1,8 +1,8 @@
 {
-  "name": "spa-final-project_sbrycbc",
+  "name": "delish-deliveries",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sbrycbc.github.io/spa-final-project_sbrycbc",
+  "homepage": "https://sbrycbc.github.io/delish-deliveries",
   "dependencies": {
     "@paypal/react-paypal-js": "^8.1.0",
     "@reduxjs/toolkit": "^1.9.5",
