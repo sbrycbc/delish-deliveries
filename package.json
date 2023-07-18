@@ -24,6 +24,7 @@
     "reactstrap": "^9.2.0",
     "redux-logger": "^3.0.6",
     "remixicon": "^3.4.0",
+    "sass": "^1.63.6",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
