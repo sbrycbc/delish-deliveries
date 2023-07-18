@@ -4,9 +4,9 @@ Dieses Projekt ist eine Online-Food-Bestellung App, die mit React.js, Redux Tool
 
 ## Deployment Links
 
-- (Netlify Link von Delish-Deliveries)[https://delish-deliveries.netlify.app/home]
+- [Netlify Link von Delish-Deliveries](https://delish-deliveries.netlify.app/home)
 
-- (Vercel Link von Delish-Deliveries)[https://delish-deliveries.vercel.app/home]
+- [Vercel Link von Delish-Deliveries](https://delish-deliveries.vercel.app/home)
 
 ## Funktionen
 
