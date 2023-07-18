@@ -2,6 +2,12 @@
 
 Dieses Projekt ist eine Online-Food-Bestellung App, die mit React.js, Redux Toolkit, und ReactStrap entwickelt wurde. Benutzer können durch diese App Food filtern, sie in den Warenkorb legen und Zahlungen tätigen.
 
+## Deployment Links
+
+- (Netlify Link von Delish-Deliveries)[https://delish-deliveries.netlify.app/home]
+
+- (Vercel Link von Delish-Deliveries)[https://delish-deliveries.vercel.app/home]
+
 ## Funktionen
 
 Hauptfunktionen der App:
