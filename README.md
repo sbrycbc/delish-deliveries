@@ -62,7 +62,7 @@ Das Projekt enthält eigens erstellte Komponenten für Karussells oder Slides (r
 
 ## Installation und Ausführung
 
-1. Projekt klonen: `git clone https://github.com/sbrycbc/spa-final-project_sbrycbc.git`
+1. Projekt klonen: `git clone https://github.com/sbrycbc/delish-deliveries.git`
 2. In das Projektverzeichnis wechseln: `cd proje-name`
 3. Erforderliche Abhängigkeiten installieren: `npm install`
 4. Erstellen eine .env datei und Fügen deine Paypal Developer Client Id zu.
