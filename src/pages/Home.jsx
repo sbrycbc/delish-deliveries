@@ -3,7 +3,7 @@ import Helmet from "../components/Helmet/Helmet.js";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 
 import lieferung from "../assets/images/lieferung.jpg";
-import whyUns from "../assets/images/why-uns2.jpg";
+import whyUns from "../assets/images/wrm.jpg";
 import testimonial from "../assets/images/why-uns.png";
 
 import "../styles/hero-section.css";
